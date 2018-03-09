@@ -1,6 +1,6 @@
 {
   "name": "react-mp3-recorder",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simple microphone recorder for React that captures mp3 audio.",
   "author": "transitive-bullshit",
   "license": "MIT",
