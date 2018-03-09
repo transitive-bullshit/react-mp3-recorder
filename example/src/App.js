@@ -4,6 +4,7 @@ import Recorder from 'react-mp3-recorder'
 import ReactAudioPlayer from 'react-audio-player'
 
 import blobToBuffer from 'blob-to-buffer'
+import ribbon from './ribbon.png'
 
 export default class App extends Component {
   state = {
@@ -16,40 +17,55 @@ export default class App extends Component {
     } = this.state
 
     return (
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          minHeight: '100vh'
-        }}
-      >
-        <div>
-          <Recorder
-            onRecordingComplete={this._onRecordingComplete}
-            onRecordingError={this._onRecordingError}
+      <div>
+        <a href='https://github.com/transitive-bullshit/react-mp3-recorder'>
+          <img
+            src={ribbon}
+            alt='Fork me on GitHub'
             style={{
-              margin: '0 auto'
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              border: 0
             }}
           />
+        </a>
 
-          <p>
-            Click and hold to start recording.
-          </p>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+            minHeight: '100vh'
+          }}
+        >
+          <div>
+            <Recorder
+              onRecordingComplete={this._onRecordingComplete}
+              onRecordingError={this._onRecordingError}
+              style={{
+                margin: '0 auto'
+              }}
+            />
 
-          {url && (
-            <div>
-              <ReactAudioPlayer
-                src={url}
-                controls
-                style={{
-                  minWidth: '500px'
-                }}
-              />
-            </div>
-          )}
+            <p>
+              Click and hold to start recording.
+            </p>
+
+            {url && (
+              <div>
+                <ReactAudioPlayer
+                  src={url}
+                  controls
+                  style={{
+                    minWidth: '500px'
+                  }}
+                />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     )
