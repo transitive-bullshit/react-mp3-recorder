@@ -8,8 +8,9 @@ import classNames from 'classnames'
 
 import vmsg from './vmsg'
 
-import MicIcon from 'material-ui/svg-icons/av/mic'
+import micIcon from './mic-icon-white.svg'
 
+import RecordingAnimation from './recording-animation'
 import styles from './styles.css'
 
 export default class Recorder extends Component {
@@ -51,12 +52,25 @@ export default class Recorder extends Component {
 
     return (
       <div
-        className={classNames(styles.button, className)}
-        onMouseDown={this._onMouseDown}
-        onMouseUp={this._onMouseUp}
+        className={classNames(styles.container, className)}
         {...rest}
       >
-        <MicIcon color='#fff' />
+        <div
+          className={styles.button}
+          onMouseDown={this._onMouseDown}
+          onMouseUp={this._onMouseUp}
+        >
+          <img src={micIcon} width={24} height={24} />
+        </div>
+
+        {/*
+        <RecordingAnimation
+          size={{
+            width: 400,
+            height: 200
+          }}
+        />
+        */}
       </div>
     )
   }

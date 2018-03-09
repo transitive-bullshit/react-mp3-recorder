@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Recorder from 'react-mp3-recorder'
 import ReactAudioPlayer from 'react-audio-player'
 
@@ -19,45 +18,43 @@ export default class App extends Component {
     } = this.state
 
     return (
-      <MuiThemeProvider>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-            minHeight: '100vh'
-          }}
-        >
-          <div>
-            <Recorder
-              wasmURL={wasmURL}
-              onRecordingComplete={this._onRecordingComplete}
-              onRecordingError={this._onRecordingError}
-              style={{
-                margin: '0 auto'
-              }}
-            />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          minHeight: '100vh'
+        }}
+      >
+        <div>
+          <Recorder
+            wasmURL={wasmURL}
+            onRecordingComplete={this._onRecordingComplete}
+            onRecordingError={this._onRecordingError}
+            style={{
+              margin: '0 auto'
+            }}
+          />
 
-            <p>
-              Click and hold to start recording.
-            </p>
+          <p>
+            Click and hold to start recording.
+          </p>
 
-            {url && (
-              <div>
-                <ReactAudioPlayer
-                  src={url}
-                  controls
-                  style={{
-                    minWidth: '500px'
-                  }}
-                />
-              </div>
-            )}
-          </div>
+          {url && (
+            <div>
+              <ReactAudioPlayer
+                src={url}
+                controls
+                style={{
+                  minWidth: '500px'
+                }}
+              />
+            </div>
+          )}
         </div>
-      </MuiThemeProvider>
+      </div>
     )
   }
 
