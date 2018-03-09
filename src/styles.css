@@ -1,8 +1,28 @@
-/* add css styles here (optional) */
+.button {
+  background: #ff4931;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+
+  transition: all 200ms ease;
+}
+
+.button:hover {
+  transition: all 100ms ease;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+  transition: all 50ms ease;
+  transform: scale(1.03);
+  background: #e5432d;
 }

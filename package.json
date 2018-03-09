@@ -9,18 +9,21 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "scripts": {
-    "test": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
   "peerDependencies": {
+    "material-ui": "^0.20.0",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0"
+    "react-dom": "^15.0.0 || ^16.0.0",
+    "vmsg": "^0.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

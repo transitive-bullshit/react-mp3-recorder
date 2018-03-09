@@ -15,12 +15,12 @@ npm install --save react-mp3-recorder
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-mp3-recorder'
+import Recorder from 'react-mp3-recorder'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Recorder />
     )
   }
 }
