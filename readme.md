@@ -1,6 +1,6 @@
 # react-mp3-recorder
 
-> Elegant microphone recorder for React that captures mp3 audio.
+> Simple microphone recorder for React that captures mp3 audio.
 
 [![NPM](https://img.shields.io/npm/v/react-mp3-recorder.svg)](https://www.npmjs.com/package/react-mp3-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -51,13 +51,12 @@ export default class App extends Component {
 
 Note that you currently have to include [vmsg.wasm](https://github.com/Kagami/vmsg/blob/master/vmsg.wasm) directly, as bundling it is difficult due to it being imported from a web worker.
 
-## Related
-
-- [vmsg](https://github.com/Kagami/vmsg) is an optimized mp3 recorder for the web which ports the lame mp3 encoder to wasm. This is what powers `react-mp3-recorder` under the hood.
-
 ## License
 
 [react-mp3-recorder](https://github.com/transitive-bullshit/react-mp3-recorder) is licensed under [MIT](https://opensource.org/licenses/MIT) © [transitive-bullshit](https://github.com/transitive-bullshit).
+
 [vmsg](https://github.com/Kagami/vmsg) is licensed under [CC0](https://github.com/Kagami/vmsg/blob/master/COPYING).
+
 LAME is licensed under [LGPL](https://github.com/Kagami/lame-svn/blob/master/lame/COPYING).
+
 MP3 patents seems to have [expired since April 23, 2017](https://en.wikipedia.org/wiki/LAME#Patents_and_legal_issues).
