@@ -53,7 +53,7 @@ Note that you currently have to include [vmsg.wasm](https://github.com/Kagami/vm
 
 ## License
 
-[react-mp3-recorder](https://github.com/transitive-bullshit/react-mp3-recorder) is licensed under [MIT](https://opensource.org/licenses/MIT) © [transitive-bullshit](https://github.com/transitive-bullshit).
-[vmsg](https://github.com/Kagami/vmsg) is licensed under [CC0](https://github.com/Kagami/vmsg/blob/master/COPYING).
-LAME is licensed under [LGPL](https://github.com/Kagami/lame-svn/blob/master/lame/COPYING).
-MP3 patents seems to have [expired since April 23, 2017](https://en.wikipedia.org/wiki/LAME#Patents_and_legal_issues).
+- [react-mp3-recorder](https://github.com/transitive-bullshit/react-mp3-recorder) is licensed under [MIT](https://opensource.org/licenses/MIT) © [transitive-bullshit](https://github.com/transitive-bullshit).
+- [vmsg](https://github.com/Kagami/vmsg) is licensed under [CC0](https://github.com/Kagami/vmsg/blob/master/COPYING).
+- LAME is licensed under [LGPL](https://github.com/Kagami/lame-svn/blob/master/lame/COPYING).
+- MP3 patents seem to have [expired since April 23, 2017](https://en.wikipedia.org/wiki/LAME#Patents_and_legal_issues).
