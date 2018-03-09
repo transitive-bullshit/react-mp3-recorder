@@ -57,3 +57,5 @@ Note that you currently have to include [vmsg.wasm](https://github.com/Kagami/vm
 - [vmsg](https://github.com/Kagami/vmsg) is licensed under [CC0](https://github.com/Kagami/vmsg/blob/master/COPYING).
 - LAME is licensed under [LGPL](https://github.com/Kagami/lame-svn/blob/master/lame/COPYING).
 - MP3 patents seem to have [expired since April 23, 2017](https://en.wikipedia.org/wiki/LAME#Patents_and_legal_issues).
+
+This module was bootstrapped with [create-react-library](https://github.com/transitive-bullshit/create-react-library).
