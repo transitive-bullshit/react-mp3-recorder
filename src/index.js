@@ -10,7 +10,6 @@ import vmsg from './vmsg'
 
 import micIcon from './mic-icon-white.svg'
 
-import RecordingAnimation from './recording-animation'
 import styles from './styles.css'
 
 export default class Recorder extends Component {
@@ -62,15 +61,6 @@ export default class Recorder extends Component {
         >
           <img src={micIcon} width={24} height={24} />
         </div>
-
-        {/*
-        <RecordingAnimation
-          size={{
-            width: 400,
-            height: 200
-          }}
-        />
-        */}
       </div>
     )
   }
