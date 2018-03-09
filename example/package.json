@@ -6,7 +6,6 @@
   "license": "MIT",
   "dependencies": {
     "blob-to-buffer": "^1.2.7",
-    "get-mp3-duration": "^1.0.0",
     "material-ui": "^0.20.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
@@ -14,8 +13,7 @@
     "react-dom": "^16.2.0",
     "react-mp3-recorder": "link:..",
     "react-scripts": "^1.1.1",
-    "react-tap-event-plugin": "^3.0.2",
-    "vmsg": "^0.2.1"
+    "react-tap-event-plugin": "^3.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

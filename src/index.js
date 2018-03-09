@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import vmsg from 'vmsg'
+import vmsg from './vmsg'
 
 import MicIcon from 'material-ui/svg-icons/av/mic'
 

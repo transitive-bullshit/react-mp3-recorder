@@ -2934,10 +2934,6 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
-get-mp3-duration@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/get-mp3-duration/-/get-mp3-duration-1.0.0.tgz#471efca0f9e4930e7866016f6078582f4ce934cb"
-
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
@@ -7012,10 +7008,6 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
-
-vmsg@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/vmsg/-/vmsg-0.2.1.tgz#78c62a411803d539f6db0070cf281ebb99244ec1"
 
 walker@~1.0.5:
   version "1.0.7"

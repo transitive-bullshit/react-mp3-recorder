@@ -1,10 +1,10 @@
-# react-mp3-recorder
+# react-mp3-recorder ([demo](https://transitive-bullshit.github.io/react-mp3-recorder/))
 
 > Simple microphone recorder for React that captures mp3 audio.
 
 [![NPM](https://img.shields.io/npm/v/react-mp3-recorder.svg)](https://www.npmjs.com/package/react-mp3-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![](https://raw.githubusercontent.com/transitive-bullshit/react-mp3-recorder/master/media/demo.gif)
+[![Demo](https://raw.githubusercontent.com/transitive-bullshit/react-mp3-recorder/master/media/demo.gif)](https://transitive-bullshit.github.io/react-mp3-recorder/)
 
 ## Intro
 

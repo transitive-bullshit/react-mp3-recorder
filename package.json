@@ -22,8 +22,7 @@
     "material-ui": "^0.20.0",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
-    "vmsg": "^0.2.1"
+    "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

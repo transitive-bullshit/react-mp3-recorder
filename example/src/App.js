@@ -4,20 +4,17 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Recorder from 'react-mp3-recorder'
 import ReactAudioPlayer from 'react-audio-player'
 
-import getMP3Duration from 'get-mp3-duration'
 import blobToBuffer from 'blob-to-buffer'
 
 import wasmURL from './vmsg.wasm'
 
 export default class App extends Component {
   state = {
-    duration: 0,
     url: ''
   }
 
   render () {
     const {
-      duration,
       url
     } = this.state
 
@@ -56,10 +53,6 @@ export default class App extends Component {
                     minWidth: '500px'
                   }}
                 />
-
-                <p>
-                  Recording duration: {duration} ms.
-                </p>
               </div>
             )}
           </div>
@@ -75,15 +68,13 @@ export default class App extends Component {
         return
       }
 
-      const duration = getMP3Duration(buffer)
-      console.log('recording', blob, duration, 'ms')
+      console.log('recording', blob)
 
       if (this.state.url) {
         window.URL.revokeObjectURL(this.state.url)
       }
 
       this.setState({
-        duration,
         url: window.URL.createObjectURL(blob)
       })
     })
