@@ -5,8 +5,6 @@ import ReactAudioPlayer from 'react-audio-player'
 
 import blobToBuffer from 'blob-to-buffer'
 
-import wasmURL from './vmsg.wasm'
-
 export default class App extends Component {
   state = {
     url: ''
@@ -30,7 +28,6 @@ export default class App extends Component {
       >
         <div>
           <Recorder
-            wasmURL={wasmURL}
             onRecordingComplete={this._onRecordingComplete}
             onRecordingError={this._onRecordingError}
             style={{

@@ -24,10 +24,16 @@ export default {
     postcss({
       modules: true
     }),
+    url({
+      limit: 100 * 100 * 1024,
+      include: [
+        '**/*.svg',
+        '**/*.wasm'
+      ]
+    }),
     babel({
       exclude: 'node_modules/**'
     }),
-    url(),
     resolve(),
     commonjs()
   ]

@@ -26,13 +26,11 @@ yarn add react-mp3-recorder
 import React, { Component } from 'react'
 
 import Recorder from 'react-mp3-recorder'
-import wasmURL from './vmsg.wasm'
 
 export default class App extends Component {
   render () {
     return (
       <Recorder
-        wasmURL={wasmURL}
         onRecordingComplete={this._onRecordingComplete}
         onRecordingError={this._onRecordingError}
       />
@@ -48,8 +46,6 @@ export default class App extends Component {
   }
 }
 ```
-
-Note that you currently have to include [vmsg.wasm](https://github.com/Kagami/vmsg/blob/master/vmsg.wasm) directly, as bundling it is difficult due to it being imported from a web worker.
 
 ## License
 
