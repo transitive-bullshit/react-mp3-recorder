@@ -20,13 +20,15 @@ export default class Recorder extends Component {
     recorderParams: PropTypes.object,
     onRecordingComplete: PropTypes.func,
     onRecordingError: PropTypes.func,
+    onRecordingStart: PropTypes.func,
     className: PropTypes.string
   }
 
   static defaultProps = {
     recorderParams: { },
     onRecordingComplete: () => { },
-    onRecordingError: () => { }
+    onRecordingError: () => { },
+    onRecordingStart: () => { },
   }
 
   state = {
@@ -89,6 +91,7 @@ export default class Recorder extends Component {
       .then(() => {
         this._recorder.startRecording()
         this.setState({ isRecording: true })
+        this.props.onRecordingStart()
       })
       .catch((err) => this.props.onRecordingError(err))
   }
