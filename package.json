@@ -4,6 +4,7 @@
   "description": "Simple microphone recorder for React that captures mp3 audio.",
   "author": "transitive-bullshit",
   "license": "MIT",
+  "reveal": true,
   "repository": "transitive-bullshit/react-mp3-recorder",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

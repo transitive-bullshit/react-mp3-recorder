@@ -55,3 +55,5 @@ export default class App extends Component {
 - MP3 patents seem to have [expired since April 23, 2017](https://en.wikipedia.org/wiki/LAME#Patents_and_legal_issues).
 
 This module was bootstrapped with [create-react-library](https://github.com/transitive-bullshit/create-react-library).
+
+Support my OSS work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
